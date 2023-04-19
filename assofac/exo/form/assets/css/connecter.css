@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;500&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Montserrat;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+a {
+  color: #1E1E1E;
+  text-decoration: none;
+}
+
+body {
+  color: #1E1E1E;
+  background-color: #eee;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+li {
+  list-style: none;
+}
+
+.inputs input {
+  outline: none;
+  background-color: #4f91e6;
+  border: none;
+  padding: 8px;
+  border-radius: 8px;
+}
+
+.container_sign_in form {
+  width: 100%;
+}
+
+.navbar {
+  background-color: #4f91e6;
+  border-radius: 15px;
+  padding: 15px 0;
+  width: 70%;
+}
+
+.navbar ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+.navbar ul li a:hover {
+  color: #eee;
+}
+
+.social-media {
+  display: flex;
+  gap: 25px;
+}
+
+.social-media p:hover {
+  color: #4f91e6;
+  cursor: pointer;
+}
+
+.container-c {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container_sign_in {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px;
+  padding: 25px;
+  border-radius: 15px;
+  width:50%;
+}
+
+.container_sign_in h1 {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.choose-email {
+  text-align: center;
+}
+
+.se-connecter {
+  display: flex;
+  justify-content: center;
+}
+
+.se-connecter button {
+  background-color: #4f91e6;
+  padding: 6px 10px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: 0.6s;
+}
+
+.se-connecter button:hover {
+  color: #fff;
+}
+
+.inputs {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 15px;
+  margin: 20px 0;
+}
+
+.social-media {
+  justify-content: center;
+  margin: 0 0 10px 0;
+}
+
+.social-media p {
+  font-size: 20px;
+  transition: .2s;
+}
+
+.social-links {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.footer-col li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 5px;
+}
+
+.social-links a:hover {
+  color: #4f91e6;
+}
+
+.row {
+  display: flex;
+  justify-content: space-around;
+}
+
+.inscription {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.inscription span a{
+  color: #4f91e6;
+}
+
+.inscription span a:hover{
+  color: #4f91e6;
+  text-decoration:underline;
+}

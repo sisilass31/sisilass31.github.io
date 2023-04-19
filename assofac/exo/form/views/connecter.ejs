@@ -1,0 +1,26 @@
+<%- include('more/header.ejs') %>
+<div class="container-c">
+    <div class="container_sign_in">
+        <form action="/connecter" method="post">
+            <h1>se connecter</h1>
+            <div class="social-media">
+                <p><i class="fab fa-google"></i></p>
+                <p><i class="fab fa-youtube"></i></p>
+                <p><i class="fab fa-instagram"></i></p>
+                <p><i class="fab fa-twitter"></i></p>
+            </div>
+            <p class="choose-email">ou utiliser mon adresse e-mail :</p>
+    
+            <div class="inputs">
+                <input type="email" placeholder="email" name="email">
+                <input type="password" placeholder="mot de passe" name="mdp">
+            </div>
+    
+            <p class="inscription">je n'ai pas de compte, je m'en <span> <a href="/inscrire"> crée un </a></span></p>
+            <div class="se-connecter">
+                <button type="submit">se connecter</button>
+            </div>
+        </form>
+    </div>
+</div>
+<%- include('more/footer.ejs') %>

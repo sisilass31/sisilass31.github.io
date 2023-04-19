@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;500&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Montserrat;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+a {
+    color: #1E1E1E;
+    text-decoration: none;
+}
+
+body {
+    color: #1E1E1E;
+    background-color: #eee;
+}
+
+/* darkmode */
+
+/* changement de la couleur du body lorsque la class 'dark' est ajoutée */
+body.dark {
+    background-color: #212121;
+    color: #eee;
+}
+
+/* la taille */
+.switch {
+    position: relative;
+    width: 3.5rem;
+    height: 2rem;
+    margin-left: 35px;
+}
+
+/* pour ne plus voir notre checkbox */
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(215, 215, 228);
+    transition: 0.4s;
+    border-radius: 30px;
+}
+
+/* mode clair */
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 1.4rem;
+    width: 1.4rem;
+    border-radius: 20px;
+    left: 0.3rem;
+    top: 50%;
+    transform: translateY(-50%);
+    background: linear-gradient(40deg, #ff0080, #ff8c00 70%);
+    transition: 0.4s;
+}
+
+input:checked+.slider {
+    background-color: #37393f;
+}
+
+input:checked+.slider:before {
+    left: calc(100% - 1.7rem);
+    background: #37393f;
+    box-shadow: inset -3px -2px 5px -2px #8983f7, inset -10px -4px 0 0 #a3dafb;
+}
+
+/* darkmode */
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+li {
+    list-style: none;
+}
+
+.container_index {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    padding: 25px;
+    border-radius: 15px;
+}
+
+.description {
+    text-transform: uppercase;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.image {
+    width: 500px;
+}
+
+.image img {
+    width: 100%;
+
+}
+
+.lorem {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 70%;
+}
+
+.social-links {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.social-links a {
+    color: #4f91e6;
+    text-decoration: none;
+}
+
+.footer-col li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 5px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-around;
+    margin: 70px 0 50px 0;
+}
+
+.inscription {
+    margin: 20px 0;
+}

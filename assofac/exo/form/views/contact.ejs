@@ -1,0 +1,42 @@
+<%- include('more/header.ejs') %>
+    <div class="container">
+        <div class="container_contact">
+            <form action="/contact" class="contact-form" method="post">
+                <h1>nous contacter</h1>
+                <div class="container_form">
+                    <div class="gauche">
+                        <div class="inputs_contact">
+                            <div class="input-block">
+                                <label for="">Prénom</label>
+                                <input type="text" class="form-control" name="prenom">
+                            </div>
+                        </div>
+                        <div class="inputs_contact">
+                            <div class="input-block">
+                                <label for="">Nom</label>
+                                <input type="text" class="form-control" name="nom">
+                            </div>
+                        </div>
+                        <div class="inputs_contact">
+                            <div class="input-block">
+                                <label for="">Email</label>
+                                <input type="text" class="form-control" name="email">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="droite">
+                        <div class="inputs_contact_contact">
+                            <div class="input-block">
+                                <label for="">Votre message</label>
+                                <textarea placeholder="Saisissez ici..." name="message"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="inputs_contact">
+                    <button class="button">Envoyer</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <%- include('more/footer.ejs') %>

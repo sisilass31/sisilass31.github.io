@@ -1,0 +1,16 @@
+<%- include('more/header.ejs') %>
+<div class="container_sign_up">
+    <form action="/inscrire" method="post">
+        <h1>s'inscrire</h1>
+        <p class="choose-email">ou utiliser mon adresse e-mail :</p>
+        <div class="inputs">
+            <input type="email" placeholder="email" name="email">
+            <input type="password" placeholder="mot de passe" name="mdp">
+        </div>
+        <p class="inscription">j'ai un compte, je me <span> <a href="/connecter">connecte</a> </span></p>
+        <div class="inscrire">
+            <button type="submit">s'inscrire</button>
+        </div>
+    </form>
+</div>
+<%- include('more/footer.ejs') %>
