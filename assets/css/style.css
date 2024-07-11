@@ -10,12 +10,17 @@
 }
 
 body {
+  background-color: var(--background-darkmode);
+  color: var(--background);
+}
+
+body.light {
   background-color: var(--background);
   color: var(--background-darkmode);
 }
 
 :root {
-  --white: #ffff;
+  --white: #ffffff;
   --text-color: #bbbbbb;
   --light-gray: #232323;
   --gray: #333333;
@@ -28,13 +33,80 @@ body {
 }
 
 a {
-  color: var(--background-darkmode);
-}
-
-body.dark {
-  background-color: var(--background);
   color: var(--white);
 }
+/************nav************/
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 50px;
+  background-color: var(--background-darkmode);
+  box-shadow: 0 4px 4px hsla(0, 0%, 4%, 0.3);
+}
+
+nav.light {
+  background-color: var(--background);
+  box-shadow: 0 2px 4px hsla(0, 0%, 1%, 0.1);
+}
+
+/************nav************/
+
+/* changement de la couleur du body lorsque la class 'dark' est ajoutée */
+
+/* la taille */
+.switch {
+  position: relative;
+  width: 3.5rem;
+  height: 2rem;
+  margin-left: 35px;
+}
+
+/* pour ne plus voir notre checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgb(215, 215, 228);
+  transition: 0.4s;
+  border-radius: 30px;
+}
+
+/* mode clair */
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 1.4rem;
+  width: 1.4rem;
+  border-radius: 20px;
+  left: 0.3rem;
+  top: 50%;
+  transform: translateY(-50%);
+  background: linear-gradient(40deg, #7337b8, #a759ff 70%);
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #37393f;
+}
+
+input:checked + .slider:before {
+  left: calc(100% - 1.7rem);
+  background: #37393f;
+  box-shadow: inset -3px -2px 5px -2px #c383f7, inset -10px -4px 0 0 #a3dafb;
+}
+
+/************darkmode************/
 
 /************accueil************/
 
@@ -109,88 +181,14 @@ body.dark {
   box-shadow: rgba(0, 0, 0, 0.24) 0px 2px 3px;
 }
 
-/************nav************/
-
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 30px 50px;
-  background-color: var(--background);
-  box-shadow: 0 2px 4px hsla(0, 0%, 1%, 0.1);
-}
-
-nav.dark {
-  background-color: var(--background-darkmode);
-  box-shadow: 0 4px 4px hsla(0, 0%, 4%, 0.3);
-}
-
-/************nav************/
-
-/************accueil************/
-
-/************darkmode************/
-
-/* changement de la couleur du body lorsque la class 'dark' est ajoutée */
-body.dark {
-  background-color: var(--background-darkmode);
-  color: var(--text-color);
-}
-
-/* la taille */
-.switch {
-  position: relative;
-  width: 3.5rem;
-  height: 2rem;
-  margin-left: 35px;
-}
-
-/* pour ne plus voir notre checkbox */
-.switch input {
-  opacity: 0;
-  width: 0;
-  height: 0;
-}
-
-.slider {
-  position: absolute;
-  cursor: pointer;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgb(215, 215, 228);
-  transition: 0.4s;
-  border-radius: 30px;
-}
-
-/* mode clair */
-.slider:before {
-  position: absolute;
-  content: "";
-  height: 1.4rem;
-  width: 1.4rem;
-  border-radius: 20px;
-  left: 0.3rem;
-  top: 50%;
-  transform: translateY(-50%);
-  background: linear-gradient(40deg, #7337b8, #a759ff 70%);
-  transition: 0.4s;
-}
-
-input:checked + .slider {
-  background-color: #37393f;
-}
-
-input:checked + .slider:before {
-  left: calc(100% - 1.7rem);
-  background: #37393f;
-  box-shadow: inset -3px -2px 5px -2px #c383f7, inset -10px -4px 0 0 #a3dafb;
-}
-
-/************darkmode************/
-
 /* stars */
+
+.top-title {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
 
 .hero-wrapper {
   display: flex;
@@ -221,8 +219,6 @@ input:checked + .slider:before {
   font-size: 20px;
 }
 
-/* stars */
-
 .starry-background {
   position: relative;
   width: 100%;
@@ -237,3 +233,7 @@ input:checked + .slider:before {
   background-color: var(--text-color);
   box-shadow: 0 0 5px var(--text-color);
 }
+
+/* stars */
+
+/************accueil************/
