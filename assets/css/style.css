@@ -1,12 +1,26 @@
-@import url("https://fonts.googleapis.com/css2?family=Carrois+Gothic&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 * {
   padding: 0;
   margin: 0;
-  font-family: Carrois Gothic;
+  font-family: "Poppins", sans-serif;
   box-sizing: border-box;
   text-decoration: none;
   transition: all 200ms ease;
+}
+
+:root {
+  --white: #ffffff;
+  --text-color: #bbbbbb;
+  --light-gray: #232323;
+  --gray: #333333;
+  --dark-gray: rgb(28, 28, 28);
+  --purple: #a04bff;
+  --light-purple: #9f4bffb2;
+  --dark-purple: #6d38aa;
+  --background-darkmode: #1f1f1f;
+  --background: #f0f0f0;
+  --black: #000000;
 }
 
 body {
@@ -19,25 +33,17 @@ body.light {
   color: var(--background-darkmode);
 }
 
-:root {
-  --white: #ffffff;
-  --text-color: #bbbbbb;
-  --light-gray: #232323;
-  --gray: #333333;
-  --dark-gray: rgb(28, 28, 28);
-  --purple: #a04bff;
-  --light-purple: #9f4bffb2;
-  --background-darkmode: #1f1f1f;
-  --background: #f0f0f0;
-  --black: #000000;
-}
-
 a {
   color: var(--white);
 }
+
+ul li {
+  list-style-type: none;
+}
+
 /************nav************/
 
-nav {
+header nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -46,7 +52,7 @@ nav {
   box-shadow: 0 4px 4px hsla(0, 0%, 4%, 0.3);
 }
 
-nav.light {
+header nav.light {
   background-color: var(--background);
   box-shadow: 0 2px 4px hsla(0, 0%, 1%, 0.1);
 }
@@ -135,7 +141,7 @@ input:checked + .slider:before {
 
 .profile img {
   width: 200px;
-  filter: drop-shadow(0 2px 4px hsla(0, 0%, 44%, 0.662));
+  filter: drop-shadow(0 2px 4px hsla(0, 0%, 19%, 0.662));
 }
 
 .dev {
@@ -157,6 +163,10 @@ input:checked + .slider:before {
   padding: 3px 6px;
   border-radius: 2px;
   background-color: #9f4bff15;
+}
+
+.work-name a {
+  color: var(--purple);
 }
 
 .links {
@@ -184,20 +194,21 @@ input:checked + .slider:before {
 /* stars */
 
 .top-title {
-  height: 100vh;
+  height: 500px;
   width: 100%;
   display: flex;
   justify-content: center;
 }
 
-.hero-wrapper {
+.top-portfolio {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
+  justify-content: center;
 }
 
-.hero-wrapper-title {
+.title-portfolio {
   z-index: 1;
   display: flex;
   flex-direction: column;
@@ -206,34 +217,61 @@ input:checked + .slider:before {
   margin-bottom: 20px;
 }
 
-.hero-wrapper-title span:last-child {
+.title-portfolio span:last-child {
   background: -webkit-linear-gradient(#a04bff, #55268a);
   background-clip: border-box;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-.hero-wrapper-description {
+.description-portfolio {
   max-width: 750px;
   line-height: 1.2;
   font-size: 20px;
 }
 
-.starry-background {
-  position: relative;
-  width: 100%;
-  height: 100%;
-}
-
-.star {
-  border-radius: 50%;
-  position: absolute;
-  width: 2px;
-  height: 2px;
-  background-color: var(--text-color);
-  box-shadow: 0 0 5px var(--text-color);
-}
-
 /* stars */
 
+.link-cv {
+  cursor: pointer;
+  padding: 10px 25px;
+  border-radius: 10px;
+}
+
+.link-cv:hover {
+  background-color: #6f00ff3e;
+}
+
 /************accueil************/
+
+/************fixed navbar************/
+
+.fixed-navbar nav {
+  background-blend-mode: multiply;
+  background-image: url(https://descodeuses.org/wp-content/uploads/bd_dc.png),linear-gradient(0deg,var(--purple) 20%,var(--dark-purple) 99%) !important;;
+  background-size: auto 250px;
+  width: 400px;
+  height: 65px;
+  position: fixed;
+  bottom: 25px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  z-index: 3;
+  border-radius: 15px;
+}
+
+.navlinks {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  padding: 10px 48px;
+  font-size: 20px;
+}
+
+.navlinks.home:hover {
+  content: 'Home';
+}
+/************fixed navbar************/
+

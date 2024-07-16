@@ -7,13 +7,17 @@
     <!-- css -->
     <link rel="stylesheet" href="../assets/css/style.css">
     <!-- title -->
-    <title>Home - Portfolio Sihem Lassar</title>
+    <title>Portfolio Sihem Lassar</title>
+    <!-- link box icon -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
 </head>
 
 <body>
     <header>
         <nav id="navbar">
-            <p id="name-top">Sihem Lassar</p>
+            <a href="../index.html">
+                <p id="name-top">Sihem Lassar</p>
+            </a>
             <label class="switch">
                 <input type="checkbox" />
                 <span class="slider"></span>
@@ -21,19 +25,32 @@
         </nav>
     </header>
     <main>
+        <section class="fixed-navbar">
+            <nav>
+                <ul class="navlinks">
+                    <a href="#"><li><i class='bx bx-home-alt-2'></i></li></a>
+                    <a href="#"><li><i class='bx bxs-user-pin'></i></li></a>
+                    <a href="#"><li><i class='bx bx-code-block'></i></li></a>
+                    <a href="#"><li><i class='bx bxs-school'></i></li></a>
+                    <a href="#"><li><i class='bx bxs-id-card'></i></li></a>
+                </ul>
+            </nav>
+        </section>
         <section class="top-title">
-            <div class="stars">
-                <div class="starry-background">
-                    <!-- Les étoiles seront générées ici via JavaScript -->
-                </div>
-                <div class="hero-wrapper">
-                    <h1 class="hero-wrapper-title">
-                        <span>Hello. I'm Sihem.</span><span>A Full-Stack web developer.</span>
-                    </h1>
-                    <p class="hero-wrapper-description">
-                        I am a 19 year-old fullstack developer residing in France, deeply
-                        passionate about the realms of coding, programming, and design.
-                    </p>
+            <div class="top-portfolio">
+                <h1 class="title-portfolio">
+                    <span>Hello. I'm Sihem.</span><span>A Full-Stack web developer.</span>
+                </h1>
+                <p class="description-portfolio">
+                    I am a 20 year-old fullstack developer residing in France, deeply
+                    passionate about the realms of coding, programming, and design.
+                </p>
+            </div>
+        </section>
+        <section>
+            <div class="dev">
+                <div class="work-name link-cv">
+                    <a href="../assets/images/CV-Sihem-Lassar.pdf" download="CV-Sihem-Lassar.pdf">Télécharger mon CV</a>
                 </div>
             </div>
         </section>
