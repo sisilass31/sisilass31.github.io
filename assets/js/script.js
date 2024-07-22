@@ -14,7 +14,6 @@ const lightmode = () => {
   body.classList.toggle("light");
   navbar.classList.toggle("light");
   links.classList.toggle("light");
-
 };
 
 // On vérifie la préférence de l'utilisateur lors du chargement de la page
@@ -32,14 +31,13 @@ input.onchange = lightmode;
 
 /***************************DARK MODE***************************/
 
-const navItems = document.getElementsByClassName('nav-item');
+const navItems = document.getElementsByClassName("nav-item");
 
 for (let i = 0; i < navItems.length; i++) {
-    navItems[i].addEventListener('click', () => {
-        for(let j = 0; j < navItems.length; j++) 
-            navItems[j].classList.remove('active');
-        
-        navItems[i].classList.add('active');
-    });
-}
+  navItems[i].addEventListener("click", () => {
+    for (let j = 0; j < navItems.length; j++)
+      navItems[j].classList.remove("active");
 
+    navItems[i].classList.add("active");
+  });
+}
