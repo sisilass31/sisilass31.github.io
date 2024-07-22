@@ -11,11 +11,16 @@
 
 :root {
   --text-color: #bbbbbb;
-  --background-darkmode: #1f1f1f;
+  --background-darkmode: #0b0b0b;
   --purple: #a04bff;
   --light-purple: #9f4bffb2;
   --dark-purple: #6d38aa;
   --background: #f0f0f0;
+}
+
+body,
+html {
+  height: 100%;
 }
 
 body {
@@ -26,6 +31,13 @@ body {
 body.light {
   background-color: var(--background);
   color: var(--background-darkmode);
+}
+
+main {
+  max-width: 1500px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 50px;
 }
 
 a {
@@ -46,16 +58,16 @@ ul li {
 
 /************nav************/
 
-header nav {
+nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 30px 50px;
   background-color: var(--background-darkmode);
-  box-shadow: 0 4px 4px hsla(0, 0%, 4%, 0.3);
+  box-shadow: 0 4px 4px hsla(0, 0%, 13.7%, 0.3);
 }
 
-header nav.light {
+nav.light {
   background-color: var(--background);
   box-shadow: 0 2px 4px hsla(0, 0%, 1%, 0.1);
 }
@@ -152,7 +164,6 @@ input:checked + .slider:before {
   letter-spacing: 1px;
   padding: 0px;
   display: flex;
-  justify-content: center;
   gap: 5px;
   flex-wrap: wrap;
   background-color: transparent;
@@ -160,18 +171,33 @@ input:checked + .slider:before {
 }
 
 .work-name {
-  font-weight: 200;
   font-size: 13px;
-  color: var(--purple);
-  border: 1px solid var(--purple);
   padding: 3px 6px;
   border-radius: 2px;
+  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 10px;
+  margin-top: 30px;
+  font-weight: 400;
+}
+
+.work-name1 {
+  border: 1px solid var(--purple);
   background-color: #9f4bff15;
 }
 
-.work-name a {
+.work-name1 a {
   color: var(--purple);
-  font-weight: 400;
+}
+
+.work-name2 {
+  background-color: var(--purple);
+  border: 1px solid var(--purple);
+  margin-left: 10px;
+}
+
+.work-name2 a {
+  color: var(--background-darkmode);
 }
 
 .links {
@@ -199,19 +225,12 @@ input:checked + .slider:before {
 /* stars */
 
 .top-title {
-  height: 500px;
-  width: 100%;
-  display: flex;
-  justify-content: center;
+  height: 100vh;
 }
 
 .top-portfolio {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  text-align: center;
-  justify-content: center;
-  margin: 0 50px;
 }
 
 .title-portfolio {
@@ -219,7 +238,7 @@ input:checked + .slider:before {
   display: flex;
   flex-direction: column;
   font-weight: 400;
-  font-size: 75px;
+  font-size: 40px;
   margin-bottom: 20px;
 }
 
@@ -239,16 +258,6 @@ input:checked + .slider:before {
 
 /* stars */
 
-.link-cv {
-  cursor: pointer;
-  padding: 10px 25px;
-  border-radius: 10px;
-}
-
-.link-cv:hover {
-  background-color: #6f00ff3e;
-}
-
 /************accueil************/
 
 /************fixed navbar************/
@@ -267,7 +276,7 @@ input:checked + .slider:before {
   width: 400px;
   margin: auto;
   background-color: var(--dark-purple);
-  padding: 10px 20px;
+  padding: 15px 20px;
   border-radius: 30px;
 }
 
@@ -279,6 +288,7 @@ input:checked + .slider:before {
   padding: 10px 15px;
   cursor: pointer;
   transition: all 0.2s ease-out;
+  font-size: 22px;
 }
 
 .nav-text {
@@ -302,3 +312,54 @@ input:checked + .slider:before {
 
 /************fixed navbar************/
 
+/************footer************/
+
+/************footer************/
+
+/************Mobile************/
+@media screen and (max-width: 480px) {
+  .dev {
+    flex-direction: column;
+    margin-bottom: 0px;
+  }
+  .work-name {
+    text-align: center;
+  }
+  .work-name2 {
+    margin-left: 0px;
+    margin-top: 12px;
+    text-align: center;
+  }
+  main {
+    padding: 30px;
+  }
+  nav {
+    padding: 30px;
+  }
+  .title-portfolio {
+    font-size: 28px;
+  }
+  .nav {
+    width: 300px;
+  }
+
+  .nav-text {
+    font-size: 15px;
+  }
+  .nav-item {
+    padding: 10px;
+    font-size: 17px;
+  }
+}
+
+/************Tablet************/
+@media screen and (max-width: 768px) {
+}
+
+/************Desktop************/
+@media screen and (max-width: 992px) {
+}
+
+/************Huge************/
+@media screen and (min-width: 1280px) {
+}

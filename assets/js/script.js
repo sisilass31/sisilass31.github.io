@@ -14,6 +14,7 @@ const lightmode = () => {
   body.classList.toggle("light");
   navbar.classList.toggle("light");
   links.classList.toggle("light");
+
 };
 
 // On vérifie la préférence de l'utilisateur lors du chargement de la page
