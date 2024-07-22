@@ -6,17 +6,14 @@ const input = document.querySelector("input");
 const body = document.querySelector("body");
 // On récupère notre navbar
 const navbar = document.getElementById("navbar");
+// On récupère nos link
+const links = document.querySelector("a");
 
 // Méthode "classList.toggle" pour ajouter ou supprimer la classe CSS "light"
 const lightmode = () => {
   body.classList.toggle("light");
   navbar.classList.toggle("light");
-  // On sauvegarde la préférence de l'utilisateur dans le localStorage
-  if (body.classList.contains("light")) {
-    localStorage.setItem("theme", "light");
-  } else {
-    localStorage.setItem("theme", "dark");
-  }
+  links.classList.toggle("light");
 };
 
 // On vérifie la préférence de l'utilisateur lors du chargement de la page
@@ -33,3 +30,15 @@ document.addEventListener("DOMContentLoaded", () => {
 input.onchange = lightmode;
 
 /***************************DARK MODE***************************/
+
+const navItems = document.getElementsByClassName('nav-item');
+
+for (let i = 0; i < navItems.length; i++) {
+    navItems[i].addEventListener('click', () => {
+        for(let j = 0; j < navItems.length; j++) 
+            navItems[j].classList.remove('active');
+        
+        navItems[i].classList.add('active');
+    });
+}
+

@@ -10,17 +10,12 @@
 }
 
 :root {
-  --white: #ffffff;
   --text-color: #bbbbbb;
-  --light-gray: #232323;
-  --gray: #333333;
-  --dark-gray: rgb(28, 28, 28);
+  --background-darkmode: #1f1f1f;
   --purple: #a04bff;
   --light-purple: #9f4bffb2;
   --dark-purple: #6d38aa;
-  --background-darkmode: #1f1f1f;
   --background: #f0f0f0;
-  --black: #000000;
 }
 
 body {
@@ -34,7 +29,15 @@ body.light {
 }
 
 a {
-  color: var(--white);
+  color: var(--text-color);
+}
+
+a.light {
+  color: var(--background-darkmode) !important;
+}
+
+#name-top a.light {
+  color: var(--background-darkmode) !important;
 }
 
 ul li {
@@ -62,6 +65,7 @@ header nav.light {
 /* changement de la couleur du body lorsque la class 'dark' est ajoutée */
 
 /* la taille */
+
 .switch {
   position: relative;
   width: 3.5rem;
@@ -167,6 +171,7 @@ input:checked + .slider:before {
 
 .work-name a {
   color: var(--purple);
+  font-weight: 400;
 }
 
 .links {
@@ -206,6 +211,7 @@ input:checked + .slider:before {
   align-items: center;
   text-align: center;
   justify-content: center;
+  margin: 0 50px;
 }
 
 .title-portfolio {
@@ -228,6 +234,7 @@ input:checked + .slider:before {
   max-width: 750px;
   line-height: 1.2;
   font-size: 20px;
+  font-weight: 300;
 }
 
 /* stars */
@@ -246,32 +253,52 @@ input:checked + .slider:before {
 
 /************fixed navbar************/
 
-.fixed-navbar nav {
-  background-blend-mode: multiply;
-  background-image: url(https://descodeuses.org/wp-content/uploads/bd_dc.png),linear-gradient(0deg,var(--purple) 20%,var(--dark-purple) 99%) !important;;
-  background-size: auto 250px;
-  width: 400px;
-  height: 65px;
+.fixed-navbar {
   position: fixed;
-  bottom: 25px;
-  left: 0;
-  right: 0;
-  margin: 0 auto;
-  z-index: 3;
-  border-radius: 15px;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 100;
 }
 
-.navlinks {
+.nav {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 100%;
-  padding: 10px 48px;
-  font-size: 20px;
+  flex-direction: row;
+  width: 400px;
+  margin: auto;
+  background-color: var(--dark-purple);
+  padding: 10px 20px;
+  border-radius: 30px;
 }
 
-.navlinks.home:hover {
-  content: 'Home';
+.nav-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: all 0.2s ease-out;
 }
+
+.nav-text {
+  font-size: 20px;
+  margin: auto;
+  text-align: center;
+  display: none;
+  transition: all 0.3s ease;
+}
+
+.nav-item.active {
+  flex-grow: 3;
+  border-radius: 30px;
+  background: var(--light-purple);
+  justify-content: flex-start;
+}
+
+.nav-item.active > .nav-text {
+  display: inline-block;
+}
+
 /************fixed navbar************/
 
