@@ -7,7 +7,7 @@ const body = document.querySelector("body");
 // On récupère notre navbar
 const navbar = document.getElementById("navbar");
 // On récupère nos link
-const links = document.querySelector("a");
+const links = document.getElementById("name-top");
 
 // Méthode "classList.toggle" pour ajouter ou supprimer la classe CSS "light"
 const lightmode = () => {
