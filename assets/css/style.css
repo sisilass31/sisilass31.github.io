@@ -112,10 +112,6 @@ nav.light {
 
 /************nav************/
 
-/* changement de la couleur du body lorsque la class 'dark' est ajoutée */
-
-/* la taille */
-
 .switch {
   position: relative;
   width: 3.5rem;
@@ -123,7 +119,6 @@ nav.light {
   margin-left: 35px;
 }
 
-/* pour ne plus voir notre checkbox */
 .switch input {
   opacity: 0;
   width: 0;
@@ -267,7 +262,6 @@ input:checked + .slider:before {
   transition: all 0.2s ease-out;
   font-size: 22px;
   text-decoration: none;
-  color: inherit; /* Garde la couleur du texte héritée */
 }
 
 .nav-text {
@@ -464,6 +458,7 @@ input:checked + .slider:before {
   .CV-Contact {
     gap: 0px;
     flex-direction: column;
+    width: 100%;
   }
 
   .dev {
