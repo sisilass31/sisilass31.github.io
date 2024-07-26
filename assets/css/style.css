@@ -8,7 +8,7 @@
   font-family: "Poppins", sans-serif;
   box-sizing: border-box;
   text-decoration: none;
-  transition: all 80ms ease;
+  transition: all 100ms ease;
   font-weight: 400;
 }
 
@@ -66,6 +66,7 @@ a.light {
   flex-direction: column;
   align-items: center;
   width: 100%;
+  margin-top: 30px;
 }
 
 .my-15 {
@@ -293,14 +294,29 @@ input:checked + .slider:before {
 
 /************page portfolio top************/
 
+.top-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+}
+
 .top-portfolio {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
+.top-portfolio hr {
+  width: 200px;
+  height: 3px;
+  border: none;
+  background-color: #555;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
 .title-portfolio {
-  z-index: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -313,13 +329,14 @@ input:checked + .slider:before {
   background-clip: border-box;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  text-align: center;
 }
 
 .description-portfolio {
   max-width: 950px;
   line-height: 1.6;
   font-size: 20px;
-  font-weight: 300;
+  font-weight: 200;
   text-align: center;
 }
 
