@@ -18,6 +18,7 @@
   --purple: #a04bff;
   --light-purple: #9f4bffdb;
   --dark-purple: #6d38aa;
+  --dark-purplev2: #9f4bff37;
   --background: #e8e8e8;
   --card-icon-background-color: rgba(255, 255, 255, 0.08);
 }
@@ -95,6 +96,9 @@ nav {
   padding: 30px 50px;
   background-color: var(--background-darkmode);
   box-shadow: 0 4px 4px hsla(0, 0%, 13.7%, 0.3);
+  position: fixed;
+  z-index: 100;
+  width: 100%;
 }
 
 nav.light {
@@ -111,6 +115,8 @@ nav.light {
 }
 
 /************nav************/
+
+/************lightmode************/
 
 .switch {
   position: relative;
@@ -137,7 +143,6 @@ nav.light {
   border-radius: 30px;
 }
 
-/* mode clair */
 .slider:before {
   position: absolute;
   content: "";
@@ -161,7 +166,20 @@ input:checked + .slider:before {
   box-shadow: inset -3px -2px 5px -2px #c383f7, inset -10px -4px 0 0 #a3dafb;
 }
 
-/************darkmode************/
+/************lightmode************/
+
+canvas {
+  display: block;
+}
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
 
 /************accueil************/
 
@@ -234,6 +252,7 @@ input:checked + .slider:before {
 /************accueil************/
 
 /************fixed navbar************/
+
 .fixed-navbar {
   position: fixed;
   bottom: 30px;
@@ -262,6 +281,7 @@ input:checked + .slider:before {
   transition: all 0.2s ease-out;
   font-size: 22px;
   text-decoration: none;
+  color: inherit;
 }
 
 .nav-text {
@@ -291,13 +311,15 @@ input:checked + .slider:before {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 78vh;
+  height: 100vh;
+  z-index: 100;
 }
 
 .top-portfolio {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 0 30px;
 }
 
 .top-portfolio hr {
@@ -353,8 +375,12 @@ input:checked + .slider:before {
 }
 
 .work-name1 {
-  border: 1px solid var(--purple);
-  background-color: #9f4bff15;
+  border: 2px solid var(--purple);
+  background-color: none;
+}
+
+.work-name1:hover {
+  background-color: var(--dark-purplev2);
 }
 
 .work-name1 a,
@@ -364,8 +390,13 @@ input:checked + .slider:before {
 
 .work-name2 {
   background-color: var(--purple);
-  border: 1px solid var(--purple);
+  border: 2px solid var(--purple);
   margin-left: 10px;
+}
+
+.work-name2:hover {
+  background-color: var(--dark-purple);
+  border: 2px solid var(--dark-purple);
 }
 
 /************page portfolio top************/
@@ -529,9 +560,6 @@ input:checked + .slider:before {
 }
 
 @media screen and (min-width: 992px) {
-  /* .top-title{
-    height: 100vh;
-  } */
 }
 @media screen and (max-width: 1210px) {
 }
