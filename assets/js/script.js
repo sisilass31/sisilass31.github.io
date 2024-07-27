@@ -49,7 +49,7 @@ for (let i = 0; i < navItems.length; i++) {
 particlesJS("particles-js", {
   particles: {
     number: { value: 80, density: { enable: true, value_area: 800 } },
-    color: { value: "#8a25fc" },
+    color: { value: "#642da1" },
     shape: {
       type: "circle",
       stroke: { width: 0, color: "#000000" },
@@ -69,7 +69,7 @@ particlesJS("particles-js", {
     line_linked: {
       enable: true,
       distance: 150,
-      color: "#8a25fc",
+      color: "#642da1",
       opacity: 0.4,
       width: 1,
     },
