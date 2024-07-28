@@ -3,7 +3,7 @@
 
 Welcome to my portfolio site where you can explore my professional background, my skills and my projects ;)
 
-![alt text](https://github.com/sisilass31/portfolio-sihem/blob/main/assets/images/profile-pic.png?raw=true)
+![alt text](https://github.com/sisilass31/portfolio-sihem/blob/main/assets/images/accueil-img.png?raw=true)
 
 ## Charte graphique
 
