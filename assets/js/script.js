@@ -6,14 +6,20 @@ const input = document.querySelector("input");
 const body = document.querySelector("body");
 // On récupère notre navbar
 const navbar = document.getElementById("navbar");
+// On récupère le nom
+const nom = document.getElementById("name-top");
+// On récupère la carte
+const map = document.getElementById("map");
 // On récupère nos link
-const links = document.getElementById("name-top");
+const contact = document.getElementById("contact-container");
 
 // Méthode "classList.toggle" pour ajouter ou supprimer la classe CSS "light"
 const lightmode = () => {
   body.classList.toggle("light");
   navbar.classList.toggle("light");
-  links.classList.toggle("light");
+  nom.classList.toggle("light");
+  map.classList.toggle("light");
+  contact.classList.toggle("light");
 };
 
 // On vérifie la préférence de l'utilisateur lors du chargement de la page
