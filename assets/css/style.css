@@ -854,6 +854,7 @@ footer {
   border-radius: 8px 0px 0px 8px;
   color: var(--background);
   font-size: 16px;
+  cursor: pointer;
 }
 
 /************footer************/
