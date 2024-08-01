@@ -20,7 +20,7 @@
   --light-purple: #9f4bffdb;
   --dark-purple: #6d38aa;
   --dark-purplev2: #9f4bff37;
-  --background: #e8e8e8;
+  --background: #c9c9c9;
   --card-icon-background-color: rgba(255, 255, 255, 0.08);
   --gradient: linear-gradient(
     180deg,
@@ -89,14 +89,23 @@ a.light {
   margin-bottom: 15px;
 }
 
+.mt-30 {
+  margin-top: 30px;
+}
+
+.ml-10 {
+  margin-left: 10px;
+}
+
 .second-title h3 {
   font-size: 26px;
 }
 
-.second-title hr {
+.title hr {
   color: var(--dark-purple);
   width: 100px;
   text-align: center;
+  margin-top: 8px;
 }
 
 .fw {
@@ -375,7 +384,7 @@ canvas {
 }
 
 .nav-text {
-  font-size: 20px;
+  font-size: 15px;
   margin: auto;
   text-align: center;
   display: none;
@@ -450,7 +459,6 @@ canvas {
   display: flex;
   gap: 8px;
   background-color: transparent;
-  margin-bottom: 20px;
 }
 
 .work-name {
@@ -460,7 +468,6 @@ canvas {
   cursor: pointer;
   padding: 10px 20px;
   border-radius: 10px;
-  margin-top: 30px;
   z-index: 1;
 }
 
@@ -498,7 +505,7 @@ canvas {
 }
 
 #propos {
-  margin-top: 95px;
+  margin: 95px 0;
 }
 
 .about-container {
@@ -508,7 +515,8 @@ canvas {
 }
 
 .img-about {
-  width: 30%;
+  max-width: 285px;
+  width: 100%;
 }
 
 .img-about img {
@@ -518,12 +526,30 @@ canvas {
 
 .text-about {
   width: 70%;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
 }
 
-.second-title hr .about-container {
+.information-about {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.social-media {
   display: flex;
   justify-content: space-between;
-  width: 100%;
+}
+
+.social-media-container {
+  width: 150px;
+}
+
+.social-media i {
+  font-size: 28px;
+  color: var(--dark-purple);
+  cursor: pointer;
 }
 
 /************à propos************/
@@ -533,6 +559,13 @@ canvas {
 /************skills************/
 
 /************************cards portfolio************************/
+
+.portfolio-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 15px;
+}
 
 .cards-portfolio-container {
   display: flex;
@@ -640,7 +673,7 @@ footer {
   filter: grayscale(100%) invert(100%);
   width: 100%;
   height: 455px;
-  opacity: 0.8;
+  opacity: 0.6;
   z-index: -2;
 }
 
@@ -876,10 +909,6 @@ footer {
     width: 300px;
   }
 
-  .nav-text {
-    font-size: 15px;
-  }
-
   .nav-item {
     padding: 10px;
     font-size: 17px;
@@ -888,8 +917,21 @@ footer {
   #particles-js {
     display: none;
   }
+
   .row {
     flex-direction: column;
+  }
+
+  .information-about {
+    flex-direction: column;
+    gap: 26px;
+  }
+  .img-about img {
+    width: 100% !important;
+  }
+
+  #propos {
+    margin: 50px 0;
   }
 }
 
@@ -899,6 +941,7 @@ footer {
     flex-direction: column;
   }
   .img-about {
+    max-width: none;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -950,6 +993,14 @@ footer {
     align-items: center;
     flex-direction: column;
     margin-bottom: 20px;
+  }
+  .title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .about-desc {
+    margin: 25px 0;
   }
 }
 
