@@ -505,12 +505,12 @@ canvas {
 }
 
 #propos {
-  margin: 95px 0;
+  margin: 50px 0;
 }
 
 .about-container {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   gap: 40px;
 }
 
@@ -534,7 +534,7 @@ canvas {
 .information-about {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  gap: 50px;
 }
 
 .social-media {
@@ -930,14 +930,10 @@ footer {
   .img-about img {
     width: 100% !important;
   }
-
-  #propos {
-    margin: 50px 0;
-  }
 }
 
 /************Tablet************/
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 825px) {
   .about-container {
     flex-direction: column;
   }
@@ -1003,6 +999,10 @@ footer {
   .about-desc {
     margin: 25px 0;
   }
+
+  .information-about {
+    justify-content: space-between;
+  }
 }
 
 /************Desktop************/
@@ -1010,16 +1010,6 @@ footer {
   .cards-portfolio-container {
     justify-content: center;
   }
-}
-
-@media screen and (min-width: 992px) {
-}
-
-@media screen and (max-width: 1210px) {
-}
-
-/************Huge************/
-@media screen and (min-width: 1280px) {
 }
 
 /************************responsive************************/
