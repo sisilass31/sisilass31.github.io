@@ -132,7 +132,7 @@
                             <ul class="social-media">
                                 <li><i class='bx bxl-linkedin'></i></li>
                                 <li><i class='bx bxl-github'></i></li>
-                                <li><i class='bx bx-envelope' ></i></li>
+                                <li><i class='bx bx-envelope'></i></li>
                             </ul>
                         </div>
                     </div>
@@ -332,7 +332,7 @@
         </div>
         <div class="contact" id="contact-container">
             <h3>Formulaire de contact</h3>
-            <form action="#">
+            <form id="contact-form">
                 <div class="input-container">
                     <div class="group">
                         <input type="text" id="nom" class="input-item" autocomplete="off" required>
@@ -341,19 +341,19 @@
                     </div>
 
                     <div class="group">
-                        <input type="email" id="prenom" class="input-item" autocomplete="off">
+                        <input type="email" id="prenom" class="input-item" autocomplete="off" required>
                         <span class="bar"></span>
                         <label for="prenom">Email</label>
                     </div>
 
                     <div class="group">
-                        <input type="text" id="objet" class="input-item" autocomplete="off">
+                        <input type="text" id="objet" class="input-item" autocomplete="off" required>
                         <span class="bar"></span>
                         <label for="objet">Objet du message</label>
                     </div>
 
                     <div class="group">
-                        <textarea name="message" id="message" class="input-item" autocomplete="off"></textarea>
+                        <textarea name="message" id="message" class="input-item" autocomplete="off" required></textarea>
                         <span class="bar"></span>
                         <label for="message">Message</label>
                     </div>
@@ -362,12 +362,13 @@
                     <button type="submit">Envoyer</button>
                 </div>
             </form>
+
         </div>
         <div class="footer-title">
             <h2>Contactez moi</h2>
             <hr>
         </div>
-    </footer>
+    </footer>    
     <script src="../assets/js/script.js"></script>
 </body>
 
