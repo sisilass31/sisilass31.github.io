@@ -27,6 +27,7 @@
     rgba(160, 75, 255, 1) 0%,
     rgba(92, 51, 139, 1) 100%
   );
+  --error-color: #b2429e;
 }
 
 ul li {
@@ -731,6 +732,13 @@ footer {
 
 #message {
   height: 48.8px;
+}
+
+.input-container .error-txt {
+  font-size: 14px;
+  margin-top: 6px;
+  color: var(--error-color);
+  display: none;
 }
 
 .input-container input {
