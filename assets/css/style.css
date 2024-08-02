@@ -221,10 +221,18 @@ canvas {
   display: flex;
   flex-wrap: wrap;
   height: fit-content;
+  -webkit-background-position: center top;
   background-position: center top;
+  -webkit-background-blend-mode: multiply;
   background-blend-mode: multiply;
-  background-image: url(../images/background.png),
-    linear-gradient(45deg, #a04bff 0%, #5a2497 99%) !important;
+  -webkit-background-image: -webkit-linear-gradient(
+      45deg,
+      #a04bff 0%,
+      #5a2497 99%
+    ),
+    url(../images/background.png);
+  background-image: linear-gradient(45deg, #a04bff 0%, #5a2497 99%),
+    url(../images/background.png);
 }
 
 .services {
@@ -365,10 +373,11 @@ canvas {
   flex-direction: row;
   width: 400px;
   margin: auto;
-  background-color: #a04bff7a;
+  background-color: #6d38aac7;
   backdrop-filter: blur(15px);
   padding: 15px 20px;
   border-radius: 30px;
+  box-shadow: 0px 0px 4px #000;
 }
 
 .nav-item {
@@ -411,7 +420,7 @@ canvas {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 100dvh;
 }
 
 .top-portfolio {
@@ -915,7 +924,7 @@ footer {
   }
 
   .nav {
-    width: 300px;
+    width: 345px;
   }
 
   .nav-item {
