@@ -29,23 +29,23 @@
             <div class="nav">
                 <a href="#top" class="nav-item active">
                     <i class='bx bx-home-alt nav__icon'></i>
-                    <span class="nav-text">accueil</span>
+                    <span class="nav-text">Accueil</span>
                 </a>
                 <a href="#propos" class="nav-item">
                     <i class='bx bx-user nav__icon'></i>
-                    <span class="nav-text">à propos</span>
+                    <span class="nav-text">À propos</span>
                 </a>
-                <a href="#skills" class="nav-item">
+                <a href="#education" class="nav-item">
                     <i class='bx bx-book-alt nav__icon'></i>
-                    <span class="nav-text">skills</span>
+                    <span class="nav-text">Éducation</span>
                 </a>
                 <a href="#portfolio" class="nav-item">
                     <i class='bx bx-briefcase-alt nav__icon'></i>
-                    <span class="nav-text">portfolio</span>
+                    <span class="nav-text">Portfolio</span>
                 </a>
                 <a href="#contact" class="nav-item">
                     <i class='bx bx-message-square-detail nav__icon'></i>
-                    <span class="nav-text">contact</span>
+                    <span class="nav-text">Contact</span>
                 </a>
             </div>
         </section>
@@ -80,22 +80,29 @@
             <div class="services-item">
                 <span><i class='bx bx-briefcase'></i></span>
                 <h2>Web Design</h2>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id atque cupiditate ipsa ut delectus ad
-                    iure sint magnam inventore.</p>
+                <p>Créer une interface utilisateur avec une interface unique et moderne.</p>
+                <p>Figma, Canva, Adobe After Effects</p>
             </div>
 
             <div class="services-item">
                 <span><i class='bx bx-code-block'></i></span>
                 <h2>Front End</h2>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id atque cupiditate ipsa ut delectus ad
-                    iure sint magnam inventore.</p>
+                <p>Développer des interfaces utilisateur interactives et dynamiques.</p>
+                <p>HTML, CSS, Javascript, React</p>
             </div>
 
             <div class="services-item">
                 <span><i class='bx bx-data'></i></span>
                 <h2>Back End</h2>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id atque cupiditate ipsa ut delectus ad
-                    iure sint magnam inventore.</p>
+                <p>Concevoir et maintenir des serveurs, bases de données et applications logicielles.</p>
+                <p>NodeJS, Express, MySQL, Java</p>
+            </div>
+
+            <div class="services-item">
+                <span><i class='bx bx-data'></i></span>
+                <h2>Environnement</h2>
+                <p>Configurer et utiliser des outils et plateformes pour optimiser le développement logiciel.</p>
+                <p>VSCode, Git, Github, MacOS</p>
             </div>
         </div>
     </header>
@@ -332,22 +339,23 @@
         </div>
         <div class="contact" id="contact-container">
             <h3>Formulaire de contact</h3>
-            <form id="contact-form">
+            <form id="contact-form" action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="35875798-bc60-486e-b10d-ae37c574e772">
                 <div class="input-container">
                     <div class="group">
-                        <input type="text" id="nom" class="input-item" autocomplete="off" required>
+                        <input type="text" name="name" id="nom" class="input-item" autocomplete="off" required>
                         <span class="bar"></span>
                         <label for="nom">Nom complet</label>
                     </div>
 
                     <div class="group">
-                        <input type="email" id="prenom" class="input-item" autocomplete="off" required>
+                        <input type="email" name="replyto" id="prenom" class="input-item" autocomplete="off" required>
                         <span class="bar"></span>
                         <label for="prenom">Email</label>
                     </div>
 
                     <div class="group">
-                        <input type="text" id="objet" class="input-item" autocomplete="off" required>
+                        <input type="text" name="subject" id="objet" class="input-item" autocomplete="off" required>
                         <span class="bar"></span>
                         <label for="objet">Objet du message</label>
                     </div>
@@ -358,6 +366,7 @@
                         <label for="message">Message</label>
                     </div>
                 </div>
+                <input type="hidden" name="redirect" value="https://portfolio-sihem-lassar.netlify.app/pages/merci.html">
                 <div class="button-container-form">
                     <button type="submit">Envoyer</button>
                 </div>
@@ -368,7 +377,7 @@
             <h2>Contactez moi</h2>
             <hr>
         </div>
-    </footer>    
+    </footer>
     <script src="../assets/js/script.js"></script>
 </body>
 

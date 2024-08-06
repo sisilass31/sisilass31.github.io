@@ -255,7 +255,7 @@ canvas {
   padding: 28px;
   background: var(--light-darkmode);
   margin: 24px 0;
-  flex: 0 0 calc(33% - 32px);
+  flex: 0 0 calc(25% - 32px);
   margin: 16px;
 }
 
@@ -443,6 +443,7 @@ canvas {
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
   font-size: 40px;
   margin-bottom: 20px;
 }
@@ -473,7 +474,6 @@ canvas {
 
 .work-name {
   font-size: 13px;
-  padding: 3px 6px;
   border-radius: 2px;
   cursor: pointer;
   padding: 10px 20px;
@@ -639,6 +639,52 @@ canvas {
 }
 
 /************************cards portfolio************************/
+
+/************************go back************************/
+
+.container-go-back {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  gap: 16px;
+}
+
+.container-go-back i {
+  font-size: 80px;
+  background: -webkit-linear-gradient(#a04bff, #55268a);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.container-go-back h1 {
+  background: -webkit-linear-gradient(#a04bff, #55268a);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+}
+
+.container-go-back p {
+  text-align: center;
+  font-size: 15px;
+}
+
+.go-back {
+  color: var(--background);
+  background-color: var(--dark-purple);
+  font-size: 14px;
+  border-radius: 2px;
+  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+.go-back:hover {
+  background-color: var(--dark-purplev2);
+}
+/************************go back************************/
 
 /************footer************/
 
@@ -885,67 +931,60 @@ footer {
     flex-direction: column;
     width: 100%;
   }
-
   .dev {
     flex-direction: column;
     margin-bottom: 22px;
     gap: 12px;
   }
-
   .bg-color-purple {
     text-align: center;
   }
-
   .work-name {
     text-align: center;
     padding: 8px 20px;
   }
-
   .work-name2 {
     margin-left: 0px;
     margin-top: 10px;
     text-align: center;
   }
-
   main {
     padding: 0 30px;
   }
-
   nav {
     padding: 30px;
   }
-
   .title-portfolio {
-    font-size: 28px;
+    font-size: 26px;
   }
-
   .description-portfolio {
     font-size: 16px;
   }
-
   .nav {
     width: 345px;
   }
-
   .nav-item {
     padding: 10px;
     font-size: 17px;
   }
-
   #particles-js {
     display: none;
   }
-
   .row {
     flex-direction: column;
   }
-
   .information-about {
     flex-direction: column;
     gap: 26px;
   }
   .img-about img {
     width: 100% !important;
+  }
+  .container-go-back p {
+    font-size: 13px;
+  }
+  .container-go-back h1 {
+    font-size: 25px;
   }
 }
 
@@ -967,9 +1006,6 @@ footer {
     width: 100%;
 
     text-align: center;
-  }
-  .background-separation {
-    flex-direction: column;
   }
   .cards-portfolio {
     width: 100%;
@@ -1016,7 +1052,6 @@ footer {
   .about-desc {
     margin: 25px 0;
   }
-
   .information-about {
     justify-content: space-between;
   }
@@ -1030,3 +1065,14 @@ footer {
 }
 
 /************************responsive************************/
+@media (max-width: 1240px) {
+  .services-item {
+    flex: 0 0 calc(50% - 32px) !important;
+  }
+}
+
+@media (max-width: 715px) {
+  .services-item {
+    flex: 0 0 calc(100% - 32px) !important;
+  }
+}
