@@ -235,6 +235,21 @@ canvas {
     url(../images/background.png);
 }
 
+.languages {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 8px;
+}
+
+.languages span {
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 12px;
+  background-color: var(--light-darkmode);
+  color: var(--background);
+}
+
 .services {
   padding: 80px 0 40px 0;
 }
@@ -259,7 +274,7 @@ canvas {
   margin: 16px;
 }
 
-.services-item span {
+.services-item i {
   font-size: 80px;
   color: var(--background);
 }
@@ -681,6 +696,7 @@ canvas {
   padding: 10px 20px;
   border-radius: 10px;
 }
+
 .go-back:hover {
   background-color: var(--dark-purplev2);
 }
