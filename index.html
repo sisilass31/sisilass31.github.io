@@ -61,22 +61,23 @@
         </div>
         <div class="contact" id="contact-container">
             <h3>Formulaire de contact</h3>
-            <form id="contact-form">
+            <form id="contact-form" action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="35875798-bc60-486e-b10d-ae37c574e772">
                 <div class="input-container">
                     <div class="group">
-                        <input type="text" id="nom" class="input-item" autocomplete="off" required>
+                        <input type="text" name="name" id="nom" class="input-item" autocomplete="off" required>
                         <span class="bar"></span>
                         <label for="nom">Nom complet</label>
                     </div>
 
                     <div class="group">
-                        <input type="email" id="prenom" class="input-item" autocomplete="off" required>
+                        <input type="email" name="replyto" id="prenom" class="input-item" autocomplete="off" required>
                         <span class="bar"></span>
                         <label for="prenom">Email</label>
                     </div>
 
                     <div class="group">
-                        <input type="text" id="objet" class="input-item" autocomplete="off" required>
+                        <input type="text" name="subject" id="objet" class="input-item" autocomplete="off" required>
                         <span class="bar"></span>
                         <label for="objet">Objet du message</label>
                     </div>
@@ -87,6 +88,7 @@
                         <label for="message">Message</label>
                     </div>
                 </div>
+                <input type="hidden" name="redirect" value="https://portfolio-sihem-lassar.netlify.app/pages/merci.html">
                 <div class="button-container-form">
                     <button type="submit">Envoyer</button>
                 </div>
