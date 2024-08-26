@@ -297,7 +297,7 @@ canvas {
 /************début accueil************/
 
 #header {
-  height: 100vh;
+  height: 100dvh;
 }
 
 .home-container {
@@ -516,7 +516,7 @@ canvas {
   margin-left: 10px;
 }
 
-.work-name2 a{
+.work-name2 a {
   color: var(--current-background);
 }
 
@@ -624,6 +624,10 @@ canvas {
   font-size: 12px;
   box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.05), 0px 8px 15px rgba(0, 0, 0, 0.1),
     0 0 0 1px rgba(255, 255, 255, 0.1);
+}
+
+.desc-portfolio.mb-15 p {
+  height: 100px;
 }
 
 .container-button-cards-portfolio {
