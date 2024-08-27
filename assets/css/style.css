@@ -219,7 +219,9 @@ canvas {
 
 .background-separation {
   display: flex;
-  flex-wrap: wrap;
+  gap: 16px;
+  padding: 16px;
+  justify-content: center;
   height: fit-content;
   -webkit-background-position: center top;
   background-position: center top;
@@ -269,9 +271,7 @@ canvas {
   text-align: center;
   padding: 28px;
   background: var(--light-darkmode);
-  margin: 24px 0;
-  flex: 0 0 calc(25% - 32px);
-  margin: 16px;
+  flex: 0 0 calc(24%);
 }
 
 .services-item i {
@@ -295,8 +295,6 @@ canvas {
 /************fin particles************/
 
 /************début accueil************/
-
-
 
 .home-container {
   display: flex;
@@ -1085,15 +1083,20 @@ footer {
   }
 }
 
-/************************responsive************************/
-@media (max-width: 1240px) {
+@media (max-width: 1370px) {
   .services-item {
     flex: 0 0 calc(50% - 32px) !important;
   }
+  .background-separation {
+    flex-wrap: wrap;
+  }
 }
+
+/************************responsive************************/
 
 @media (max-width: 715px) {
   .services-item {
-    flex: 0 0 calc(100% - 32px) !important;
+    flex: 0 0 calc(100%) !important;
   }
 }
+
