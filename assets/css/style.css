@@ -1101,6 +1101,6 @@ footer {
     flex: 0 0 calc(100% - 32px) !important;
   }
   #header {
-    height: 120vh !important;
+    height: 110vh !important;
   }
 }
