@@ -498,7 +498,7 @@ canvas {
 
 .work-name1 {
   border: 2px solid var(--dark-purple);
-  background-color: none;
+  background-color: transparent;
 }
 
 .work-name1:hover {
@@ -918,7 +918,7 @@ footer {
 }
 
 .input-container textarea::-webkit-scrollbar-track {
-  background: transparent var(--dark-purple);
+  background: var(--dark-purple);
   border-radius: 10px;
 }
 
@@ -1101,6 +1101,6 @@ footer {
     flex: 0 0 calc(100% - 32px) !important;
   }
   #header {
-    height: 120vh;
+    height: 120vh !important;
   }
 }
