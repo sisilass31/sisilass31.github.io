@@ -1116,7 +1116,7 @@ footer {
   }
   .container {
     padding-top: var(--navbar-height);
-   /*  height: calc(100dvh + var(--navbar-height)); */
+   height: calc(80dvh + var(--navbar-height));
    align-items: inherit;
   }
 }
