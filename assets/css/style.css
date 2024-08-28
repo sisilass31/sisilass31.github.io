@@ -721,7 +721,9 @@ footer {
 }
 
 .footer-title hr {
-  color: var(--background-darkmode);
+  background-color: var(--background-darkmode);
+  border: none;
+  height: 2px;
   width: 100px;
   text-align: center;
 }
@@ -1114,7 +1116,8 @@ footer {
   }
   .container {
     padding-top: var(--navbar-height);
-    height: calc(100dvh + var(--navbar-height));
+   /*  height: calc(100dvh + var(--navbar-height)); */
+   align-items: inherit;
   }
 }
 
