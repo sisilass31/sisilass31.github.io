@@ -115,6 +115,10 @@ a.light {
   font-weight: 300;
 }
 
+#propos, #portfolio, #skills {
+  scroll-margin-top: 25vh;
+}
+
 /************general************/
 
 /************nav************/
@@ -1123,7 +1127,3 @@ footer {
 }
 
 /************************responsive************************/
-
-#propos, #portfolio{
-  scroll-margin-top: 25vh;
-}
