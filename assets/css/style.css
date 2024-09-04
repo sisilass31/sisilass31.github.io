@@ -1123,3 +1123,7 @@ footer {
 }
 
 /************************responsive************************/
+
+#propos, #portfolio{
+  scroll-margin-top: 25vh;
+}
