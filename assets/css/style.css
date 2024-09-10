@@ -242,6 +242,7 @@ canvas {
     url(../images/background.png);
   background-image: linear-gradient(45deg, #a04bff 0%, #5a2497 99%),
     url(../images/background.png);
+    background-size: contain;
 }
 
 .languages {
@@ -507,7 +508,7 @@ canvas {
   background-color: var(--dark-purplev2);
 }
 
-.work-name1 a,
+.work-name1,
 .color-purple {
   color: var(--dark-purple);
 }
@@ -518,7 +519,7 @@ canvas {
   margin-left: 10px;
 }
 
-.work-name2 a {
+.work-name2 {
   color: var(--current-background);
 }
 
@@ -891,6 +892,7 @@ footer {
 .bar:before {
   left: 50%;
 }
+
 .bar:after {
   right: 50%;
 }

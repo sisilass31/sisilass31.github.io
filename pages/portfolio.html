@@ -23,11 +23,11 @@
                 <p id="name-top">Sihem Lassar</p>
             </a>
             <label class="switch">
-                <input type="checkbox" />
+                <input type="checkbox">
                 <span class="slider"></span>
             </label>
         </nav>
-        <section class="fixed-navbar">
+        <div class="fixed-navbar">
             <div class="nav">
                 <a href="#top" class="nav-item active">
                     <i class='bx bx-home-alt nav__icon'></i>
@@ -50,7 +50,7 @@
                     <span class="nav-text">Contact</span>
                 </a>
             </div>
-        </section>
+        </div>
         <!-- début titre page portfolio -->
         <section class="top-title">
             <!-- particles.js container -->
@@ -65,13 +65,13 @@
                     passionné par les domaines du codage, de la programmation et du design.
                 </p>
                 <div class="CV-Contact">
-                    <div class="work-name work-name1 mt-30">
-                        <a href="../assets/images/CV-Sihem-Lassar.pdf" download="CV-Sihem-Lassar.pdf">Télécharger mon
-                            CV</a>
-                    </div>
-                    <div class="work-name work-name2 ml-10 mt-30">
-                        <a href="#contact">Contactez moi</a>
-                    </div>
+                    <a href="../assets/images/CV-Sihem-Lassar.pdf" download="CV-Sihem-Lassar.pdf"
+                        class="work-name work-name1 mt-30">
+                        Télécharger mon CV
+                    </a>
+                    <a href="#contact" class="work-name work-name2 ml-10 mt-30">
+                        Contactez moi
+                    </a>
                 </div>
             </div>
         </section>
@@ -156,9 +156,10 @@
                         <div class="social-media-container">
                             <ul class="social-media">
                                 <!-- ajout de blank? -->
-                                <a href="https://www.linkedin.com/in/sihem-lassar"><i class='bx bxl-linkedin'></i></a>
-                                <a href="https://github.com/sisilass31"><i class='bx bxl-github'></i></a>
-                                <a href="mailto:lassarsihem31@gmail.com"><i class='bx bx-envelope'></i></a>
+                                <li><a href="https://www.linkedin.com/in/sihem-lassar"><i
+                                            class='bx bxl-linkedin'></i></a></li>
+                                <li><a href="https://github.com/sisilass31"><i class='bx bxl-github'></i></a></li>
+                                <li><a href="mailto:lassarsihem31@gmail.com"><i class='bx bx-envelope'></i></a></li>
                             </ul>
                         </div>
                     </div>
@@ -196,6 +197,7 @@
                         </div>
                     </div>
                 </div>
+
                 <div class="cards-portfolio">
                     <div class="cards-portfolio-info">
                         <div class="title-cards-portfolio">
@@ -219,6 +221,7 @@
                         </div>
                     </div>
                 </div>
+
                 <div class="cards-portfolio">
                     <div class="cards-portfolio-info">
                         <div class="title-cards-portfolio">
@@ -287,8 +290,53 @@
                         </div>
                     </div>
                 </div>
-                
-                <!-- <div class="cards-portfolio">
+
+                <div class="cards-portfolio">
+                    <div class="cards-portfolio-info">
+                        <div class="title-cards-portfolio">
+                            <h3>Explore the world</h3>
+                            <hr class="my-15">
+                        </div>
+                        <div class="use-languages my-15">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="desc-portfolio mb-15">
+                            <p>Ce site propose une interface simple et élégante pour effectuer des calculs en ligne.</p>
+                        </div>
+                        <div class="container-button-cards-portfolio">
+                            <a href="https://calculator-sisilass31.netlify.app" target="_blank"
+                                class="btn-démo btn-cards-portfolio">Démo</a>
+                            <a href="https://github.com/sisilass31/calculator" target="_blank"
+                                class="btn-github btn-cards-portfolio">Github</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cards-portfolio">
+                    <div class="cards-portfolio-info">
+                        <div class="title-cards-portfolio">
+                            <h3>Météo</h3>
+                            <hr class="my-15">
+                        </div>
+                        <div class="use-languages my-15">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="desc-portfolio mb-15">
+                            <p>Cette application météo offre une interface simple et élégante pour consulter les
+                                prévisions météorologiques en temps réel.</p>
+                        </div>
+                        <div class="container-button-cards-portfolio">
+                            <a href="https://github.com/sisilass31/weather" target="_blank"
+                                class="btn-github btn-cards-portfolio">Github</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cards-portfolio">
                     <div class="cards-portfolio-info">
                         <div class="title-cards-portfolio">
                             <h3>Weavely</h3>
@@ -303,13 +351,11 @@
                             <p>Weavely est un réseau social en cours de développement avec Express.js, EJS, et CSS.</p>
                         </div>
                         <div class="container-button-cards-portfolio">
-                           <a href="#" target="_blank"
-                                class="btn-démo btn-cards-portfolio">Démo</a>
                             <a href="https://github.com/sisilass31/weavely"
                                 class="btn-github btn-cards-portfolio">Github</a>
                         </div>
                     </div>
-                </div> -->
+                </div>
             </div>
         </section>
         <!-- fin section portfolio -->
