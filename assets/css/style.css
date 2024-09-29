@@ -16,18 +16,18 @@
   --text-color: #bbbbbb;
   --background-darkmode: #0b0b0b;
   --light-darkmode: #0b0b0b6d;
-  --purple: #a04bff;
-  --light-purple: #9f4bffdb;
-  --dark-purple: #6d38aa;
-  --dark-purplev2: #9f4bff37;
+  --green: #398a64;
+  --light-green: #398a64db;
+  --dark-green: #23553e;
+  --dark-greenv2: #23553e37;
   --background: #c9c9c9;
   --card-icon-background-color: rgba(255, 255, 255, 0.08);
   --gradient: linear-gradient(
     180deg,
-    rgba(160, 75, 255, 1) 0%,
-    rgba(92, 51, 139, 1) 100%
+    #398a64 0%,
+    #23553e 100%
   );
-  --error-color: #b2429e;
+  --error-color: #42b244;
   --navbar-height: 92px;
 }
 
@@ -105,7 +105,7 @@ a.light {
 }
 
 .title hr {
-  color: var(--dark-purple);
+  color: var(--dark-green);
   width: 100px;
   text-align: center;
   margin-top: 8px;
@@ -192,7 +192,7 @@ nav.light {
   left: 0.3rem;
   top: 50%;
   transform: translateY(-50%);
-  background: linear-gradient(40deg, #7337b8, #a759ff 70%);
+  background: linear-gradient(40deg, #398a64, #23553e 70%);
   transition: 0.4s;
 }
 
@@ -203,7 +203,7 @@ input:checked + .slider {
 input:checked + .slider:before {
   left: calc(100% - 1.7rem);
   background: #37393f;
-  box-shadow: inset -3px -2px 5px -2px #c383f7, inset -10px -4px 0 0 #a3dafb;
+  box-shadow: inset -3px -2px 5px -2px #23553e, inset -10px -4px 0 0 #398a64;
 }
 
 /************lightmode************/
@@ -236,11 +236,11 @@ canvas {
   background-blend-mode: multiply;
   -webkit-background-image: -webkit-linear-gradient(
       45deg,
-      #a04bff 0%,
-      #5a2497 99%
+      #398a64 0%,
+      #23553e 99%
     ),
     url(../images/background.png);
-  background-image: linear-gradient(45deg, #a04bff 0%, #5a2497 99%),
+  background-image: linear-gradient(45deg, #398a64 0%, #23553e 99%),
     url(../images/background.png);
     background-size: contain;
 }
@@ -326,7 +326,7 @@ canvas {
 }
 
 .profile img {
-  width: 120px;
+  width: 150px;
   filter: drop-shadow(0 2px 4px hsla(0, 0%, 19%, 0.662));
   z-index: 1;
 }
@@ -340,11 +340,11 @@ canvas {
   background-color: transparent;
 }
 
-.bg-color-purple {
-  border: 1px solid var(--purple);
-  background-color: #9f4bff15;
+.bg-color-green {
+  border: 1px solid var(--green);
+  background-color: #23553e15;
   border-radius: 3px;
-  color: var(--purple);
+  color: var(--green);
   font-weight: 300;
   font-size: 14px;
   padding: 3px 10px;
@@ -370,7 +370,7 @@ canvas {
   border-radius: 2px;
   text-decoration: none;
   border: 1px solid rgb(45, 45, 45);
-  background-color: #8a42dd;
+  background-color: var(--green);
   box-shadow: rgba(0, 0, 0, 0.24) 0px 2px 3px;
 }
 
@@ -391,7 +391,7 @@ canvas {
   flex-direction: row;
   width: 400px;
   margin: auto;
-  background-color: var(--dark-purple);
+  background-color: var(--dark-green);
   backdrop-filter: blur(15px);
   padding: 12px 20px;
   border-radius: 18px;
@@ -422,7 +422,7 @@ canvas {
 .nav-item.active {
   flex-grow: 3;
   border-radius: 16px;
-  background: #8d43e0;
+  background: var(--green);
   justify-content: flex-start;
 }
 
@@ -467,7 +467,7 @@ canvas {
 }
 
 .title-portfolio span:last-child {
-  background: -webkit-linear-gradient(#a04bff, #55268a);
+  background: -webkit-linear-gradient(#398a64, #23553e);
   background-clip: border-box;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -500,22 +500,22 @@ canvas {
 }
 
 .work-name1 {
-  border: 2px solid var(--dark-purple);
+  border: 2px solid var(--dark-green);
   background-color: transparent;
 }
 
 .work-name1:hover {
-  background-color: var(--dark-purplev2);
+  background-color: var(--dark-greenv2);
 }
 
 .work-name1,
-.color-purple {
-  color: var(--dark-purple);
+.color-green {
+  color: var(--dark-green);
 }
 
 .work-name2 {
-  background-color: var(--dark-purple);
-  border: 2px solid var(--dark-purple);
+  background-color: var(--dark-green);
+  border: 2px solid var(--dark-green);
   margin-left: 10px;
 }
 
@@ -524,8 +524,8 @@ canvas {
 }
 
 .work-name2:hover {
-  background-color: var(--dark-purple);
-  border: 2px solid var(--dark-purple);
+  background-color: var(--dark-green);
+  border: 2px solid var(--dark-green);
 }
 
 /************page portfolio top************/
@@ -580,7 +580,7 @@ canvas {
 
 .social-media i {
   font-size: 28px;
-  color: var(--dark-purple);
+  color: var(--dark-green);
   cursor: pointer;
 }
 
@@ -645,24 +645,24 @@ canvas {
   border-radius: 5px;
   text-decoration: none;
   text-align: center;
-  background-color: var(--purple);
+  background-color: var(--green);
   transition: background-color 0.25s;
 }
 
 .btn-démo {
-  background-color: var(--purple);
+  background-color: var(--green);
 }
 
 .btn-github {
-  background-color: var(--dark-purple);
+  background-color: var(--dark-green);
 }
 
 .btn-démo:hover {
-  background-color: var(--dark-purple);
+  background-color: var(--dark-green);
 }
 
 .btn-github:hover {
-  background-color: var(--purple);
+  background-color: var(--green);
 }
 
 /************************cards portfolio************************/
@@ -680,14 +680,14 @@ canvas {
 
 .container-go-back i {
   font-size: 80px;
-  background: -webkit-linear-gradient(#a04bff, #55268a);
+  background: -webkit-linear-gradient(#398a64, #23553e);
   background-clip: border-box;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .container-go-back h1 {
-  background: -webkit-linear-gradient(#a04bff, #55268a);
+  background: -webkit-linear-gradient(#398a64, #23553e);
   background-clip: border-box;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -701,7 +701,7 @@ canvas {
 
 .go-back {
   color: var(--background);
-  background-color: var(--dark-purple);
+  background-color: var(--dark-green);
   font-size: 14px;
   border-radius: 2px;
   cursor: pointer;
@@ -710,7 +710,7 @@ canvas {
 }
 
 .go-back:hover {
-  background-color: var(--dark-purplev2);
+  background-color: var(--dark-greenv2);
 }
 /************************go back************************/
 
@@ -810,7 +810,7 @@ footer {
   padding: 10px 10px 10px 5px;
   display: block;
   width: 100%;
-  border-bottom: 1px solid var(--dark-purple);
+  border-bottom: 1px solid var(--dark-green);
   color: var(--current-text-color);
   resize: none;
 }
@@ -832,7 +832,7 @@ footer {
   display: block;
   width: 100%;
   border: none;
-  border-bottom: 1px solid var(--dark-purple);
+  border-bottom: 1px solid var(--dark-green);
   color: var(--current-text-color);
 }
 
@@ -845,7 +845,7 @@ footer {
   display: block;
   width: 100%;
   border: none;
-  border-bottom: 1px solid var(--dark-purple);
+  border-bottom: 1px solid var(--dark-green);
   color: var(--current-text-color);
 }
 
@@ -870,7 +870,7 @@ footer {
 .input-container textarea:not(:placeholder-shown) ~ label {
   top: -20px;
   font-size: 14px;
-  color: var(--dark-purple);
+  color: var(--dark-green);
 }
 /************bar************/
 
@@ -924,14 +924,14 @@ footer {
 }
 
 .input-container textarea::-webkit-scrollbar-track {
-  background: var(--dark-purple);
+  background: var(--dark-green);
   border-radius: 10px;
 }
 
 /* firefox */
 .input-container textarea {
   scrollbar-width: thin;
-  scrollbar-color: var(--dark-purple) transparent;
+  scrollbar-color: var(--dark-green) transparent;
 }
 
 .button-container-form {
@@ -1072,7 +1072,7 @@ footer {
     margin-bottom: 22px;
     gap: 12px;
   }
-  .bg-color-purple {
+  .bg-color-green {
     text-align: center;
   }
   .work-name {

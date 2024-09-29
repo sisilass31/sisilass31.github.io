@@ -34,8 +34,8 @@
                     <h1 id="name-profile">Sihem Lassar</h1>
                 </div>
                 <div class="dev">
-                    <div class="bg-color-purple">Conceptrice d'application web</div>
-                    <div class="bg-color-purple">Conceptrice Design</div>
+                    <div class="bg-color-green">Conceptrice d'application web</div>
+                    <div class="bg-color-green">Conceptrice Design</div>
                 </div>
                 <div class="links" id="links">
                     <!-- ajout de blank? -->
@@ -64,7 +64,7 @@
                 <input type="hidden" name="access_key" value="35875798-bc60-486e-b10d-ae37c574e772">
                 <div class="input-container">
                     <div class="group">
-                        <input type="text" name="name" id="nom" class="input-item" autocomplete="off" required>
+                        <input type="text" name="name" id="nom" class="input-item" autocomplete="off" required pattern="[A-Za-z]">
                         <span class="bar"></span>
                         <label for="nom">Nom complet</label>
                     </div>
@@ -76,13 +76,13 @@
                     </div>
 
                     <div class="group">
-                        <input type="text" name="subject" id="objet" class="input-item" autocomplete="off" required>
+                        <input type="text" name="subject" id="objet" class="input-item" autocomplete="off" required pattern="[A-Za-z][0-9]">
                         <span class="bar"></span>
                         <label for="objet">Objet du message</label>
                     </div>
 
                     <div class="group">
-                        <textarea name="message" id="message" class="input-item" autocomplete="off" required></textarea>
+                        <textarea name="message" id="message" class="input-item" autocomplete="off" required pattern="[A-Za-z][0-9]"></textarea>
                         <span class="bar"></span>
                         <label for="message">Message</label>
                     </div>
