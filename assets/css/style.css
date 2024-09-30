@@ -408,7 +408,7 @@ canvas {
   transition: all 0.2s ease-out;
   font-size: 22px;
   text-decoration: none;
-  color: inherit;
+  /*color: inherit;*/
 }
 
 .nav-text {
