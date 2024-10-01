@@ -18,14 +18,14 @@
   --light-darkmode: #0b0b0b6d;
   --blue: #7899ef;
   --light-blue: #7899efdb;
-  --dark-blue: #627dc4;
-  --dark-bluev2: #627dc437;
+  --dark-blue: #546dac;
+  --dark-bluev2: #546dac37;
   --background: #c9c9c9;
   --card-icon-background-color: rgba(255, 255, 255, 0.08);
   --gradient: linear-gradient(
     180deg,
     #7899ef 0%,
-    #627dc4 100%
+    #546dac 100%
   );
   --error-color: #8aa6ed;
   --navbar-height: 92px;
@@ -192,7 +192,7 @@ nav.light {
   left: 0.3rem;
   top: 50%;
   transform: translateY(-50%);
-  background: linear-gradient(40deg, #7899ef, #627dc4 70%);
+  background: linear-gradient(40deg, #7899ef, #546dac 70%);
   transition: 0.4s;
 }
 
@@ -203,7 +203,7 @@ input:checked + .slider {
 input:checked + .slider:before {
   left: calc(100% - 1.7rem);
   background: #37393f;
-  box-shadow: inset -3px -2px 5px -2px #627dc4, inset -10px -4px 0 0 #7899ef;
+  box-shadow: inset -3px -2px 5px -2px #546dac, inset -10px -4px 0 0 #7899ef;
 }
 
 /************lightmode************/
@@ -237,10 +237,10 @@ canvas {
   -webkit-background-image: -webkit-linear-gradient(
       45deg,
       #7899ef 0%,
-      #627dc4 99%
+      #546dac 99%
     ),
     url(../images/background.png);
-  background-image: linear-gradient(45deg, #7899ef 0%, #627dc4 99%),
+  background-image: linear-gradient(45deg, #7899ef 0%, #546dac 99%),
     url(../images/background.png);
     background-size: contain;
 }
@@ -342,7 +342,7 @@ canvas {
 
 .bg-color-blue {
   border: 1px solid var(--blue);
-  background-color: #627dc415;
+  background-color: #546dac15;
   border-radius: 3px;
   color: var(--blue);
   font-weight: 300;
@@ -467,7 +467,7 @@ canvas {
 }
 
 .title-portfolio span:last-child {
-  background: -webkit-linear-gradient(#7899ef, #627dc4);
+  background: -webkit-linear-gradient(#7899ef, #546dac);
   background-clip: border-box;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -680,14 +680,14 @@ canvas {
 
 .container-go-back i {
   font-size: 80px;
-  background: -webkit-linear-gradient(#7899ef, #627dc4);
+  background: -webkit-linear-gradient(#7899ef, #546dac);
   background-clip: border-box;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .container-go-back h1 {
-  background: -webkit-linear-gradient(#7899ef, #627dc4);
+  background: -webkit-linear-gradient(#7899ef, #546dac);
   background-clip: border-box;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
